@@ -18,7 +18,7 @@ class NewPost extends Component {
         }
         axios.post('https://jsonplaceholder.typicode.com/posts/', data)
             .then(response => {
-                console.log(response.data) //send data here to server
+                alert(JSON.stringify(response.data)) //send data here to server
             })
     }
 
@@ -35,7 +35,7 @@ class NewPost extends Component {
                     <option value="Max">Max</option>
                     <option value="Manu">Manu</option>
                 </select>
-                <button onClick={this.postMessage}>Add Post</button>
+                <button onClick={this.postDataHandler}>Add Post</button>
             </div>
         );
     }
