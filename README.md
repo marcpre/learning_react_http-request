@@ -25,3 +25,9 @@ Use the Link property to not lose the state:
 ###Using Route-Parameters
 
 `<Route path="/:id" exact component={Posts} />`
+
+###Render only 1 Route
+
+Use `Switch` for that.
+
+
