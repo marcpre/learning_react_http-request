@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios'
+import axios from 'axios';
 
 import './NewPost.css';
 
@@ -10,16 +10,20 @@ class NewPost extends Component {
         author: 'Max'
     }
 
+    componentDidMount () {
+        console.log(this.props);
+    }
+
     postDataHandler = () => {
         const data = {
             title: this.state.title,
-            body: this.state.body,
+            body: this.state.content,
             author: this.state.author
-        }
-        axios.post('https://jsonplaceholder.typicode.com/posts/', data)
+        };
+        axios.post('/posts', data)
             .then(response => {
-                alert(JSON.stringify(response.data)) //send data here to server
-            })
+                console.log(response);
+            });
     }
 
     render () {
