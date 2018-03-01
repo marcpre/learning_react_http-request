@@ -10,6 +10,8 @@ Define Route using:
 
 `<Route path="/" exact component={Posts} />`
 
+### Link Property
+
 Use the Link property to not lose the state:
 
 ```
@@ -19,3 +21,7 @@ Use the Link property to not lose the state:
      search: '?quick-submit=true'
  }}>New Post</Link></li>
 ```
+
+###Using Route-Parameters
+
+`<Route path="/:id" exact component={Posts} />`
