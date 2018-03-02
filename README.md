@@ -1,7 +1,5 @@
 # learning_react-http-request
 
---> stopped at 175
-
 ## react-router-dom
 
 Using the  [above package](https://github.com/ReactTraining/react-router) to add routing to react.
@@ -30,5 +28,8 @@ Use the Link property to not lose the state:
 
 Use `Switch` for that.
 
+### 404 Case
+
+`<Route render={ () => <h1>Not found!</h1> } />`
 
 --> Paused at 190
